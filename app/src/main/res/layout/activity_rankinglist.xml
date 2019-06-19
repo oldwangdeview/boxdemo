@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/rankinglist_backimage"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44">
+        <ImageView
+            android:id="@+id/iv_back_activity_basepersoninfo"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:padding="@dimen/dp_13"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/fanhui" />
+
+
+
+        <TextView
+            android:id="@+id/tv_title_activity_baseperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/c_ffffff"
+            android:textSize="@dimen/sp_18"
+            android:text="总排行榜"
+            />
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_125"
+        android:layout_marginBottom="@dimen/dp_34">
+
+
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前排名："
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_262626"
+                />
+            <TextView
+                android:id="@+id/tv_myRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_595959"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总积分："
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:textColor="@color/c_262626"
+                />
+            <TextView
+                android:id="@+id/tv_myScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_595959"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_25">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ranking_shape"
+                    android:text="名次"
+                    android:textColor="@color/c_ffffff"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:paddingRight="@dimen/dp_17"
+                    android:paddingLeft="@dimen/dp_17"
+                    android:textSize="@dimen/sp_12"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ranking_shape"
+                    android:text="会员名"
+                    android:textColor="@color/c_ffffff"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:paddingRight="@dimen/dp_17"
+                    android:paddingLeft="@dimen/dp_17"
+                    android:textSize="@dimen/sp_12"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ranking_shape"
+                    android:text="总积分"
+                    android:textColor="@color/c_ffffff"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:paddingRight="@dimen/dp_17"
+                    android:paddingLeft="@dimen/dp_17"
+                    android:textSize="@dimen/sp_12"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.oldwang.boxdemo.view.YRecycleview
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/recyclerview"
+            android:layout_marginTop="@dimen/dp_15"></com.oldwang.boxdemo.view.YRecycleview>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="“数据截止2019年02月20日”"
+            android:textColor="#8C8C8C"
+            android:textSize="@dimen/sp_12"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

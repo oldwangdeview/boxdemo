@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4">
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_20"
+        android:background="@color/c_ffffff">
+
+        <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约中"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_d52e21"
+                />
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/c_d52e21"
+                android:layout_marginTop="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约成功"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_595959"
+                />
+            <View
+                android:id="@+id/view2"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/c_d52e21"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约失败"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_595959"
+                />
+            <View
+                android:id="@+id/view3"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/c_d52e21"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已完成"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_595959"
+                />
+            <View
+                android:id="@+id/view5"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/c_d52e21"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已失效预约"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_595959"
+                />
+            <View
+                android:id="@+id/view4"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/c_d52e21"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mviewpager"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+
+
+
+
+</LinearLayout>

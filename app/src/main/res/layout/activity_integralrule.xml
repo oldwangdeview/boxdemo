@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_ffffff">
+    <include layout="@layout/layout_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="#f4f4f4"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="@dimen/sp_14"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:textColor="#525259"
+        android:text="1.使用或赢取积分需为拳联之家商城会员。
+2.拳联之家的积分可直接用于兑换礼券、也可以用于换购。换购方式为：拳联之家商城价-积分抵扣金额=商品换购价格（即支付价格）。使用积分无上限。
+3.积分只能用于购买、换购使用，不的转赠他人
+4. 在拳联之家成功购买商品，并签收后，积分将自动赠予到本人账户，可在我的积分中查看。
+5.拳联之家不定期推出积分兑换活动或积分兑换套餐。
+                        "/>
+
+</LinearLayout>

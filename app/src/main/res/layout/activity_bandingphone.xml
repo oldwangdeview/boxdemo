@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/c_ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/layout_title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="#f4f4f4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_30"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_34"
+            android:paddingRight="@dimen/dp_34"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/input_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/c_383838"
+                    android:hint="请输入11位手机号码"
+                    android:textColorHint="#C7C7CC"
+                    android:inputType="number"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="#E8E8ED"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_34"
+            android:layout_marginTop="@dimen/dp_22"
+            android:paddingRight="@dimen/dp_34"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/input_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/c_383838"
+                    android:hint="请输入手机验证码"
+                    android:textColorHint="#C7C7CC"
+                    android:inputType="number"/>
+
+                <Button
+                    android:id="@+id/getcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_31"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/sp_12"
+                    android:text="获取验证码"
+                    android:textColor="@color/c_ffffff"
+                    android:gravity="center"
+                    android:background="@drawable/register_btn_getcode"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="#E8E8ED"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_marginRight="@dimen/dp_28"
+            android:gravity="center"
+            android:text="提交"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/c_ffffff"
+            android:background="@drawable/login_phone_btnshape"
+            android:layout_marginTop="@dimen/dp_57"
+            />
+    </LinearLayout>
+
+</LinearLayout>

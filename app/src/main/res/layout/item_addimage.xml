@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/c_ffffff"
+    android:gravity="left">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_85"
+
+        android:layout_height="@dimen/dp_85">
+
+
+        <LinearLayout
+            android:id="@+id/layout_addimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/dp_22"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/choice_image"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#8C8C8C"
+                android:text="上传商品图"
+                android:layout_marginTop="@dimen/dp_5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:textColor="#8C8C8C"
+                android:text="(最多6张)"
+                android:layout_marginTop="@dimen/dp_5"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dp_75"
+            android:layout_height="@dimen/dp_75"
+            android:layout_marginTop="@dimen/dp_10"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/buffer"/>
+
+        <ImageView
+            android:id="@+id/delete_image"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:src="@mipmap/delete_image"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

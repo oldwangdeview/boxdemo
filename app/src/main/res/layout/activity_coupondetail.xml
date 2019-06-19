@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ffffff"
+    android:orientation="vertical">
+    <include layout="@layout/layout_title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="#f4f4f4"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#525259"
+        android:layout_margin="@dimen/dp_14"
+        android:text="1.优惠券有使用期限限制，过了有效期不能使用；
+2.订单中包含特价商品时不能使用优惠券，优惠券不能与其他优惠（如促销活动）同时使用；
+3.优惠券只能抵扣订单金额，优惠金额超出订单金额部分不能再次使用，不能兑换现金；
+4.每个订单只能使用一张优惠券；
+5.使用优惠券支付的订单，如果退货，优惠券抵扣金额不能退还，只能退还实际支付商品金额；如果部分退货，将按照订单实际成交商品的金额进行结算；退货后订单金额不满足优惠券使用条件时，优惠券失效。退款金额＝退货商品价格-优惠金额；
+6.优惠券等抵扣金额不能开具发票；
+7.官方商城在法律范围内保留对优惠券使用细则的最终解释权。
+                        "/>
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_315"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:background="#FFF6F3F7"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:layout_centerInParent="true"
+                android:textColor="@color/c_FFD52E21"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:text="请选择"
+                />
+
+            <View
+                android:id="@+id/line_one"
+                android:layout_width="10dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_one"
+                android:background="@color/c_FFD52E21"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_37"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_FF595959"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:text="城市"
+                />
+
+            <View
+                android:id="@+id/line_two"
+                android:layout_width="10dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_two"
+                android:background="@color/c_FFD52E21"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_37"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_FF595959"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:text="区县"
+                />
+
+            <View
+                android:id="@+id/line_three"
+                android:layout_width="10dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_three"
+                android:background="@color/c_FFD52E21"
+                android:layout_marginTop="@dimen/dp_8"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_37"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_FF595959"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:text="乡镇"
+                />
+
+            <View
+                android:id="@+id/line_four"
+                android:layout_width="10dp"
+                android:layout_height="1dp"
+                android:background="@color/c_FFD52E21"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_four"
+                android:layout_marginTop="@dimen/dp_8"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/c_FFD52E21"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_27"
+            android:maxLength="3"
+            android:text="确定"
+            />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

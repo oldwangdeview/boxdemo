@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c_ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_cb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_181">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/id_cb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:canLoop="true" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_image_quanlian"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拳联装备"
+                android:layout_marginTop="@dimen/dp_12"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#262626"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_image_wudong"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="武动拳民"
+                android:layout_marginTop="@dimen/dp_12"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#262626"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/trainingbase_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_image_jidi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="训练基地"
+                android:layout_marginTop="@dimen/dp_12"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#262626"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_image_jishi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拳联纪实"
+                android:layout_marginTop="@dimen/dp_12"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#262626"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="#F2F5F5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/c_ffffff"
+        android:layout_height="wrap_content">
+        <!--广告-->
+        <ImageView
+            android:id="@+id/iv_adv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_27"
+            android:layout_marginRight="@dimen/dp_27"
+            android:layout_marginTop="@dimen/dp_9"
+            android:layout_marginBottom="@dimen/dp_9"
+            android:src="@mipmap/home_adv_one"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="#F2F5F5"/>
+
+    <!--武动拳民-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingBottom="@dimen/dp_22">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="武动拳民"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_16"
+                android:textColor="#262626"/>
+
+            <TextView
+                android:id="@+id/tv_wudong_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看更多"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#898989"/>
+            <ImageView
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_image_moreimage"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginTop="@dimen/dp_14"
+            android:id="@+id/recyclerview"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <!--拳联纪实-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_14"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginRight="@dimen/dp_14"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="拳联纪实"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_16"
+                android:textColor="#262626"/>
+
+            <TextView
+                android:id="@+id/tv_jishi_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看更多"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#898989"/>
+            <ImageView
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_image_moreimage"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_14"
+            android:paddingRight="@dimen/dp_14"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/home_text_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#D52E21"
+                android:text="功夫快讯"/>
+
+
+
+            <TextView
+                android:id="@+id/home_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#525259"
+                android:text="十佳馆校"/>
+
+            <TextView
+                android:id="@+id/home_text_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#525259"
+                android:text="名师战将"/>
+
+            <TextView
+                android:id="@+id/home_text_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#525259"
+                android:text="品牌评分"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="#EBEDED"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/head_layout"></LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="#F2F5F5"/>
+
+    <!--训练基地-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingBottom="@dimen/dp_22">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="训练基地"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_16"
+                android:textColor="#262626"/>
+
+            <TextView
+                android:id="@+id/tv_jidi_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看更多"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#898989"/>
+            <ImageView
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_image_moreimage"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginTop="@dimen/dp_14"
+            android:id="@+id/recyclerview1"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

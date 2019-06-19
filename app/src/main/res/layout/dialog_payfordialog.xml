@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_choicegoodsdetail"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_27"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:paddingBottom="@dimen/dp_10"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/c_262626"
+            android:text="选择支付方式"
+
+            />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dialog_colsedialog"
+            android:id="@+id/colose"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_ali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingBottom="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dp_17">
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/zhifu_aliimage"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_16"
+            android:textColor="#232326"
+            android:text="支付宝支付"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_10"/>
+
+        <ImageView
+            android:id="@+id/iv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_right"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:background="@color/c_e5e5e5"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_wechart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingBottom="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dp_17">
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/zhifu_weixinimage"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_16"
+            android:textColor="#232326"
+            android:text="微信支付"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_10"/>
+
+        <ImageView
+            android:id="@+id/iv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@mipmap/icon_right"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:background="@color/c_e5e5e5"/>
+
+    <Button
+        android:id="@+id/ojbk_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginTop="@dimen/dp_25"
+        android:textColor="@color/c_ffffff"
+        android:background="@color/c_d52e21"
+        android:text="确认"/>
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ffffff"
+    android:orientation="vertical">
+    <include layout="@layout/layout_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_17">
+
+        <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_d52e21"
+                android:text="待提现"
+                />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/c_d52e21"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_525259"
+                android:text="待审核"
+                />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_1"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/c_d52e21"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_525259"
+                android:text="审核失败"
+                />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_1"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/c_d52e21"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_525259"
+                android:text="已提现"
+                />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_1"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/c_d52e21"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/viewpager">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

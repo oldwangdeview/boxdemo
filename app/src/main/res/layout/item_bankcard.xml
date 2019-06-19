@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bancard_item_shape"
+    android:paddingTop="@dimen/dp_25"
+    android:paddingBottom="@dimen/dp_20"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_36"
+        android:paddingRight="@dimen/dp_14"
+        android:orientation="horizontal">
+
+        <com.oldwang.boxdemo.view.CircleImageView
+            android:id="@+id/iv_bank_logo"
+            android:layout_width="@dimen/dp_42"
+            android:layout_height="@dimen/dp_42"
+            android:visibility="gone"
+            android:src="@mipmap/buffer"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/c_262626"
+                android:text="工商银行"/>
+
+
+            <TextView
+                android:id="@+id/tv_bank_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="储蓄卡"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_ff999999"
+                android:layout_marginTop="@dimen/dp_5"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textColor="#C4282B"
+            android:textSize="@dimen/sp_16"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_bank_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_37"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:textSize="@dimen/sp_24"
+        android:text="6221 **** **** **** 0912"
+        android:textColor="#595959"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_36"
+
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/dp_14">
+        <TextView
+            android:id="@+id/tv_add_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="添加日期：2018-05-01"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#999999"/>
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:src="@mipmap/bankcard_delete"/>
+    </LinearLayout>
+</LinearLayout>

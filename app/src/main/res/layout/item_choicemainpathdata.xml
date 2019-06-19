@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_13"
+    android:paddingRight="@dimen/dp_14"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_10">
+        <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/goodsdetail_type_choice"
+        android:textSize="@dimen/sp_16"
+        android:text=""
+        android:textColor="@color/c_262626"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:visibility="visible"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_toRightOf="@+id/layout"
+            android:src="@mipmap/choicepath_delete"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

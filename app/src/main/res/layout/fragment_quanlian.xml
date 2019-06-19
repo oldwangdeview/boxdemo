@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dp_14"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingTop="@dimen/dp_10"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:background="@drawable/quanlian_shape_titeback">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/quanlian_title_mfind"/>
+            <EditText
+                android:id="@+id/tv_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="新年第一件礼物“拳击手套”"
+                android:background="@null"
+                android:textColorHint="#AAAAB9"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginLeft="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/quanlian_findimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_20"
+            android:src="@mipmap/quanlian_title_find"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="@dimen/dp_22">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_listdata"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.RecyclerView>
+        <ImageView
+            android:id="@+id/quanlian_image_moredata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:src="@mipmap/user_image_jinatou"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tite_goodsdata"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="#E5E5E5"
+        />
+
+    <com.oldwang.boxdemo.view.YRecycleview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_weight="1"
+        android:id="@+id/recyclerview"></com.oldwang.boxdemo.view.YRecycleview>
+
+
+</LinearLayout>

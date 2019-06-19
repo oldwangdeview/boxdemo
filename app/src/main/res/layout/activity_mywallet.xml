@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_ffffff">
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_140"
+        android:layout_margin="@dimen/dp_14"
+        android:background="@drawable/mywallet_title_shape"
+        android:paddingTop="@dimen/dp_17"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/dp_14"
+            android:paddingLeft="@dimen/dp_14"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_13"
+                    android:textColor="@color/c_ffffff"
+                    android:text="收益总额(元)"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_incomeTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_27"
+                    android:textColor="@color/c_ffffff"
+                    android:textStyle="bold"
+                    android:text="0.00"/>
+            </LinearLayout>
+            
+            <Button
+                android:id="@+id/button_getcash"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_40"
+                android:text="提现"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#F35A25"
+                android:background="@drawable/mywallet_btnshape_title"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_14"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="可提现金额(元)"
+                        android:textColor="@color/c_ffffff"
+                        android:textSize="@dimen/sp_13"/>
+                    <TextView
+                        android:id="@+id/tv_CanWithdrawalMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_16"
+                        android:text="0.00"
+                        android:layout_marginTop="@dimen/dp_7"
+                        android:textColor="@color/c_ffffff"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@color/c_ffffff"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="冻结金额(元)"
+                        android:textColor="@color/c_ffffff"
+                        android:textSize="@dimen/sp_13"/>
+                    <TextView
+                        android:id="@+id/tv_frozenMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_16"
+                        android:text="0.00"
+                        android:layout_marginTop="@dimen/dp_7"
+                        android:textColor="@color/c_ffffff"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="match_parent"
+                android:src="@mipmap/mywallet_image_title"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--团队成员-->
+    <LinearLayout
+        android:id="@+id/ll_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_14"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/c_262626"
+            android:text="团队成员"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/user_image_jinatou"/>
+    </LinearLayout>
+
+    <!--收益记录-->
+    <LinearLayout
+        android:id="@+id/layout_incomerecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_14"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/c_262626"
+            android:text="收益记录"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/user_image_jinatou"/>
+    </LinearLayout>
+
+    <!--积分提现-->
+    <LinearLayout
+        android:id="@+id/layout_intgarcash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_14"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/c_262626"
+            android:text="积分提现"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/user_image_jinatou"/>
+    </LinearLayout>
+
+    <!--申请代理-->
+    <LinearLayout
+        android:id="@+id/layout_getagent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_14"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/c_262626"
+            android:text="申请代理"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/user_image_jinatou"/>
+    </LinearLayout>
+
+    <!--绑定银行卡-->
+    <LinearLayout
+        android:id="@+id/layout_bangdingbankcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_14"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/c_262626"
+            android:text="绑定银行卡"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/user_image_jinatou"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#F4F4F4"></LinearLayout>
+
+
+</LinearLayout>

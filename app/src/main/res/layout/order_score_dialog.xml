@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/appointmnet_btn_shape"
+    android:padding="@dimen/dp_30"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="最多抵扣积分"
+            android:textSize="@dimen/sp_14"
+            android:layout_weight="1"
+            android:textColor="@color/c_FF262626"
+            />
+
+        <TextView
+            android:id="@+id/tv_score_most"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_14"
+            android:text="0"
+            android:gravity="right"
+            android:textColor="@color/c_FF262626"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_20"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="账户可用积分"
+        android:textSize="@dimen/sp_14"
+        android:layout_weight="1"
+        android:textColor="@color/c_FF262626"
+        />
+
+    <TextView
+        android:id="@+id/tv_score_use"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="@dimen/sp_14"
+        android:text="0"
+        android:gravity="right"
+        android:textColor="@color/c_FF262626"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="此单可使用抵扣积分"
+            android:textSize="@dimen/sp_14"
+            android:layout_weight="1"
+            android:textColor="@color/c_FF262626"
+            />
+
+        <EditText
+            android:id="@+id/et_score_now"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_14"
+            android:inputType="number"
+            android:gravity="right"
+            android:textColor="@color/c_FF262626"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        >
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="取消"
+            android:textColor="@color/c_FF262626"
+            android:background="@drawable/appointmnet_btn_shape"
+            />
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:paddingRight="40dp"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="确定"
+            android:textColor="@color/c_ffffff"
+            android:background="@drawable/message_shape"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

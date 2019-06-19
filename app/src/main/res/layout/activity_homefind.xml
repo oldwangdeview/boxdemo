@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:gravity="center_vertical"
+            android:background="@drawable/home_find_title_shape"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_find_find"/>
+            <EditText
+                android:id="@+id/inpout_finddata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textSize="@dimen/sp_13"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:hint="新年第一件礼物“拳击手套”"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/quxiao_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#D52E21"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:textSize="@dimen/sp_14"
+            android:text="取消"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_20"
+        android:background="@color/c_ffffff">
+
+        <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="装备"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_d52e21"
+                />
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/c_d52e21"
+                android:layout_marginTop="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快讯"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_595959"
+                />
+            <View
+                android:id="@+id/view2"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/c_d52e21"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="视频"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_595959"
+                />
+            <View
+                android:id="@+id/view3"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/c_d52e21"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="场馆"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_595959"
+                />
+            <View
+                android:id="@+id/view4"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/c_d52e21"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mviewpager"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00008577</color>
+    <color name="colorPrimaryDark">#0000574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="c_ff999999">#999999</color>
+    <color name="c_ffffffff">#ffffff</color>
+    <color name="c_383838">#383838</color>
+    <color name="c_f0f0f0">#f0f0f0</color>
+    <color name="c_E6E6E6">#e6e6e6</color>
+    <color name="c_ffffff">#ffffff</color>
+    <color name="c_e5e5e5">#e5e5e5</color>
+    <color name="c_ff383838">#ff383838</color>
+    <color name="c_262626">#262626</color>
+    <color name="c_525259">#525259</color>
+    <color name="c_d52e21">#D52E21</color>
+    <color name="c_595959">#595959</color>
+    <color name="c_8C8C8C">#8C8C8C</color>
+    <color name="c_FDA100">#FDA100</color>
+    <color name="c_159C3B">#159C3B</color>
+    <color name="c_F8504D">#F8504D</color>
+    <color name="c_FED83F">#FED83F</color>
+    <color name="c_FE6F3F">#FE6F3F</color>
+    <color name="c_81878B">#81878B</color>
+    <color name="c_F8F8F8">#F8F8F8</color>
+    <color name="c_FF262626">#FF262626</color>
+    <color name="c_653fac">#653fac</color>
+    <color name="c_dddddd">#dddddd</color>
+    <color name="c_feae1b">#feae1b</color>
+    <color name="c_FFD52E21">#FFD52E21</color>
+    <color name="c_FF595959">#FF595959</color>
+    <color name="colB5B5B5">#B5B5B5</color>
+    <color name="colFFF2EF">#FFF2EF</color>
+    <color name="colF4F4F4">#F4F4F4</color>
+    <color name="col666666">#666666</color>
+
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_80"
+    android:layout_height="@dimen/dp_80"
+    android:layout_marginRight="@dimen/dp_10"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:id="@+id/image"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/buffer"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/dp_14"
+        android:layout_height="@dimen/dp_14"
+        android:src="@mipmap/bofang"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/palyimage"
+        android:visibility="gone"/>
+
+</RelativeLayout>

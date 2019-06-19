@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_choicegoodsdetail"
+    android:paddingTop="@dimen/dp_15"
+    >
+
+
+    
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:src="@mipmap/buffer"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_5"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_now_pirce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/c_d52e21"
+                />
+
+            <com.oldwang.boxdemo.view.DrawLineTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_8C8C8C"
+                />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_262626"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/colose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:src="@mipmap/dialog_colsedialog"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_top"
+        android:layout_above="@id/ojbk_btn"
+        android:scrollbars="none"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="颜色"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:textColor="@color/c_262626"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_15"/>
+
+    <com.oldwang.boxdemo.view.MyGridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/sp_10"
+        android:id="@+id/colorgrideview"></com.oldwang.boxdemo.view.MyGridView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="规格"
+        android:textColor="@color/c_262626"
+        android:textSize="@dimen/sp_16"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_15"/>
+
+    <com.oldwang.boxdemo.view.MyGridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_14"
+        android:verticalSpacing="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_14"
+        android:numColumns="3"
+        android:id="@+id/sizegrideview"></com.oldwang.boxdemo.view.MyGridView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="材质"
+            android:textColor="@color/c_262626"
+            android:textSize="@dimen/sp_16"
+            android:paddingLeft="@dimen/dp_14"
+            android:paddingRight="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_15"/>
+
+        <com.oldwang.boxdemo.view.MyGridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_14"
+            android:verticalSpacing="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_14"
+            android:numColumns="3"
+            android:id="@+id/three_gridview"></com.oldwang.boxdemo.view.MyGridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/c_262626"
+            android:text="购买数量"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/goods_btn"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_reduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:text="—"
+                android:textColor="#626262"
+                android:textSize="@dimen/sp_12"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#626262"/>
+
+            <TextView
+                android:id="@+id/et_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@null"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_15"
+                android:text="1"
+                android:textSize="@dimen/sp_12"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#626262"/>
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:text="+"
+                android:textColor="#626262"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout></android.support.v4.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/ojbk_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/c_ffffff"
+        android:text="确认"
+        android:background="@color/c_d52e21"/>
+
+    
+
+</RelativeLayout>
